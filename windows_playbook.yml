@@ -1,0 +1,8 @@
+---
+- name: Webhook Test on Windows
+  hosts: all
+  tasks:
+    - name: Create a success file on the desktop
+      win_file:
+        path: 'C:\Users\Temp\webhook_exito.txt'
+        state: touch
